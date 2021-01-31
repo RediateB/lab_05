@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./assets/css/cal.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
-<body>
+<body style="background-color: black;">
 
 <!--
     <div class="container">
@@ -37,17 +38,17 @@
         </fieldset>
     </div>
 -->
-<div class="container" >
+
+    <div class="container" >
 <div class="row mt-5">
     <div class="col-md-5 mx-auto">
-        <div class="card py-4 px-4 border-info bg-dark">
+        <div class="card py-4 px-4" >
             <div class="card-body">
                 <form>
                     <div class="form-group">
-                        
-                        <input type="text" id="display" class="form-control">
+                        <input type="text" id="display" class="form-control" style="border-color: black;" >
                     </div>
-                    <p class="" id="result"></p>
+                    <p class="text-right" id="result" style="color: white;"></p>
                 </form>
                 <div id="rows">
                     <div class="row mt-2" id="row1">
@@ -123,5 +124,9 @@
     </div>
 </div>
 </div>
+
+<script src="./assets/js/calc.js"></script>
+
+ 
 </body>
 </html>
