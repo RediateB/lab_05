@@ -5,32 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./assets/css/cal.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<!--
     <div class="container">
         <fieldset id="container">
         <form name="calculator">
             <input id="display" type="text" name="display"><br>
-            <input class="button digits" type="button" value="7">
-            <input class="button digits" type="button" value="8">
-            <input class="button digits" type="button" value="9">
-            <input class="button mathButtons" type="button" value="+" > <br>
-            <input class="button digits" type="button" value="4">
-            <input class="button digits" type="button" value="5">
-            <input class="button digits" type="button" value="6">
-            <input class="button mathButtons" type="button" value="-"><br>
-            <input class="button digits" type="button" value="1">
-            <input class="button digits" type="button" value="2">
-            <input class="button digits" type="button" value="3">
-            <input class="button mathButtons" type="button" value="x">
+            <button class="button digits"   id="seven">7</button>
+            <button class="button digits"   id="eight">8</button>
+            <button class="button digits"   id="nine">9</button>
+            <button class="button mathButtons"  id="add">+</button> <br>
+            <button class="button digits"   id="four">4</button>
+            <button class="button digits"   id="five">5</button>
+            <button class="button digits"   id="six">6</button>
+            <button class="button mathButtons"   id="minus">-</button><br>
+            <button class="button digits"   id="one">1</button>
+            <button class="button digits"   id="two">2</button>
+            <button class="button digits"   id="three">3</button>
+            <button class="button mathButtons"   id="multiply">x</button>
             <br>
-            <input id="clearButton" class="button" type="button" value="C">
-            <input class="button digits" type="button" value="0">
-            <input class="button mathButtons" type="button" value="=">
-            <input class="button mathButtons"type="button" value="/">
+            <button id="clearButton" class="button"   id="clear">C</button>
+            <button class="button digits"   id="zero">0</button>
+            <button class="button mathButtons"   id="equal">=</button>
+            <button class="button mathButtons"  id="divide">/</button>
             
         </form>
         </fieldset>
     </div>
+-->
+<div class="container" >
+<div class="row mt-5">
+    <div class="col-md-5 mx-auto">
+        <div class="card py-4 px-4 border-info bg-dark">
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        
+                        <input type="text" id="display" class="form-control">
+                    </div>
+                    <p class="" id="result"></p>
+                </form>
+                <div id="rows">
+                    <div class="row mt-2" id="row1">
+                    <div class="col-md col-3">
+                        <div class="btn btn-block btn-secondary" id="seven">7</div>
+                    </div>
+                    <div class="col-md col-3">
+                        <div class="btn btn-block btn-secondary" id="eight">8</div>
+                    </div>
+                    <div class="col-md col-3">
+                        <div class="btn btn-block btn-secondary" id="nine">9</div>
+                    </div>
+                    <div class="col-md col-3">
+                        <div class="btn btn-block btn-success" id="divide">/</div>
+                    </div>
+                    </div>
+                    <div class="row mt-2" id="row1">
+                        <div class="col-md col-3">
+                            <div class="btn btn-block btn-secondary" id="four">4</div>
+                        </div>
+                        <div class="col-md col-3">
+                            <div class="btn btn-block btn-secondary" id="five">5</div>
+                        </div>
+                        <div class="col-md col-3">
+                            <div class="btn btn-block btn-secondary" id="six">6</div>
+                        </div>
+                        <div class="col-md col-3">
+                            <div class="btn btn-block btn-success" id="multiply">x</div>
+                        </div>
+                        </div>
+                       
+                            <div class="row mt-2" id="row3">
+                                <div class="col-md col-3">
+                                    <div class="btn btn-block btn-secondary" id="one">1</div>
+                                </div>
+                                <div class="col-md col-3">
+                                    <div class="btn btn-block btn-secondary" id="two">2</div>
+                                </div>
+                                <div class="col-md col-3">
+                                    <div class="btn btn-block btn-secondary" id="three">3</div>
+                                </div>
+                                <div class="col-md col-3">
+                                    <div class="btn btn-block btn-success" id="minus">-</div>
+                                </div>
+                                </div>
+                                <div class="row mt-2" id="row4">
+                                    <div class="col-md col-3">
+                                        <div class="btn btn-block btn-secondary" id="zero">0</div>
+                                    </div>
+                                    <div class="col-md col-3">
+                                        <div class="btn btn-block btn-secondary" id="point">.</div>
+                                    </div>
+                                    <div class="col-md col-3">
+                                        <div class="btn btn-block btn-info" id="equal">=</div>
+                                    </div>
+                                    <div class="col-md col-3">
+                                        <div class="btn btn-block btn-success" id="add">+</div>
+                                    </div>
+                                    </div>
+
+                </div>
+                <div class="row mt-2">
+                    <div class="col-lg col-3">
+                        <div class="btn btn-danger" id="clear" style="width: 100%;">
+                            CE
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>
