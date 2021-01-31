@@ -14,9 +14,10 @@ const minus=document.querySelector("#minus");
 const multiply=document.querySelector("#multiply");
 const divide=document.querySelector("#divide");
 const equal=document.querySelector("#equal");
-const res=document.querySelector('#result')
-const input=document.querySelector('#display')
-const cancel=document.querySelector('#clear')
+const res=document.querySelector('#result');
+const input=document.querySelector('#display');
+const cancel=document.querySelector('#clear');
+const point=document.querySelector('#point');
 
 
 var storeStringValue="";
@@ -143,3 +144,4 @@ add.addEventListener('click',plus)
 minus.addEventListener('click',min)
 equal.addEventListener('click',eq)
 cancel.addEventListener('click',c)
+point.addEventListener('click',po)
